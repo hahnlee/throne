@@ -1,0 +1,28 @@
+.tab-header {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid var(--color-border);
+}
+.tab-list {
+  border-right: 1px solid var(--color-light-border);
+  margin-right: 1rem;
+}
+.tab-list:last-child {
+  border: none;
+}
+.tab-list img {
+  height: 2.5rem;
+  width: 100%;
+}
+.tab-item {
+  display: inline-block;
+  width: 5rem;
+  padding: .5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-item.active {
+  background: #c0dcf3;
+  cursor: default;
+}

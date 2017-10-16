@@ -1,0 +1,5 @@
+.bottom-bar {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-light-border);
+  padding: .25rem;
+}

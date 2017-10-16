@@ -1,0 +1,11 @@
+.wellcome-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-bg);
+}
+.wellcome-container > figure {
+  width: 256px;
+}

@@ -1,0 +1,57 @@
+{
+  "name": "throne-builder",
+  "version": "0.1.0",
+  "description": "Throne Builder",
+  "private": true,
+  "scripts": {
+    "build:dev": "npm run compile:dev && cross-env NODE_ENV=development node script/build.js",
+    "build:prod": "npm run compile:prod && cross-env NODE_ENV=production node script/build.js",
+    "compile:dev": "cross-env NODE_ENV=development parallel-webpack --config app/webpack.development.js",
+    "compile:prod": "cross-env NODE_ENV=production parallel-webpack --config app/webpack.production.js",
+    "start": "cross-env NODE_ENV=development node script/start",
+    "start:prod": "cross-env NODE_ENV=production node script/start"
+  },
+  "author": "Han Lee",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-minify": "^0.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-webpack-plugin": "^0.1.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "electron": "^1.7.5",
+    "electron-packager": "^9.1.0",
+    "electron-winstaller": "^2.6.3",
+    "eslint": "^4.8.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.4",
+    "fs-extra": "^4.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-native-loader": "^1.1.1",
+    "parallel-webpack": "^2.2.0",
+    "react-dev-utils": "^4.1.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0",
+    "winreg": "^1.2.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.6.0"
+  }
+}

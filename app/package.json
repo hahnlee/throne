@@ -1,0 +1,27 @@
+{
+  "name": "throne",
+  "productName": "Throne",
+  "version": "0.1.0",
+  "description": "Throne for Realm mobile database, write in Electron",
+  "main": "main",
+  "authorName": "Han Lee",
+  "scripts": {
+    "postinstall": "electron-rebuild -f -w realm"
+  },
+  "author": "Han Lee",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-addons-update": "^15.6.2",
+    "react-dom": "^16.0.0",
+    "react-draggable": "^3.0.3",
+    "react-redux": "^5.0.6",
+    "react-virtualized": "^9.10.1",
+    "realm": "^1.12.0",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.6.0",
+    "style-loader": "^0.18.2"
+  }
+}
