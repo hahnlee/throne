@@ -1,7 +1,7 @@
 # Throne
 ![logo](./app/static/logos/256x256.png)
 
-Throne is Realm browser write in electron
+Throne is Realm browser made with electron
 
 [Download](https://github.com/sn0wle0pard/throne/releases)
 
