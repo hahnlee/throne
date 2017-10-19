@@ -5,6 +5,10 @@ Throne is Realm browser made with electron
 
 [Download](https://github.com/sn0wle0pard/throne/releases)
 
+If you find first-party realm studio then, follow these links!
+* [Realm Browser OSX](https://github.com/realm/realm-browser-osx/) for macOS
+* [Realm Studio](https://realm.io/kr/products/realm-studio/) for macOS, Windows, Linux
+
 # Feature
 ## Filtering
 ![screen2](./resources/screen2.png)
