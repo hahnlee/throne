@@ -38,6 +38,20 @@ Check out [NOTICE.md](./NOTICE.md) :)
 By Artem Kovyazin Purchased from [the noun project](https://thenounproject.com/lh_vison/settings/icon-history/129045644/)
 
 # [License](./LICENSE)
-Throne is published under the Apache 2.0 license.
+```
+Copyright 2017 이한(Han Lee, sn0wle0pard)
 
-**This product is not being made available to any person located in Cuba, Iran, North Korea, Sudan, Syria or the Crimea region, or to any other person that is not eligible to receive the product under U.S. law.**
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+> **NOTE**: This product includ [realm-js](https://github.com/realm/realm-js) and realm-js follows the U.S. export control laws and policies.
