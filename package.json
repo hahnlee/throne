@@ -26,6 +26,7 @@
     "css-loader": "^0.28.7",
     "electron": "^1.7.5",
     "electron-packager": "^9.1.0",
+    "electron-rebuild": "^1.6.0",
     "electron-winstaller": "^2.6.3",
     "eslint": "^4.8.0",
     "eslint-config-react-app": "^2.0.1",
@@ -51,7 +52,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "devDependencies": {
-    "electron-rebuild": "^1.6.0"
-  }
+  "devDependencies": {}
 }

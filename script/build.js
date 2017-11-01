@@ -24,6 +24,7 @@ const path = require('path');
 const cp = require('child_process');
 const fs = require('fs-extra');
 const packager = require('electron-packager');
+const { rebuild } = require('electron-rebuild');
 
 const {
   getReleaseChannel,
@@ -48,21 +49,14 @@ fs.removeSync(getDistRoot());
 console.log('Copying dependencies…');
 copyDependencies();
 
-packageApp((err, appPaths) => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  } else {
-    console.log(`Built to ${appPaths}`);
-  }
-});
-
 function copyDependencies() {
   const originalPackage = require(path.join(
     projectRoot,
     'app',
     'package.json'
   ));
+
+  const buildPackage = require(path.join(projectRoot, 'package.json'));
 
   const commonConfig = require(path.resolve(__dirname, '../app/webpack.common'));
   const externals = commonConfig.externals;
@@ -109,6 +103,29 @@ function copyDependencies() {
   ) {
     console.log('  Installing npm dependencies…');
     cp.execSync('npm install', { cwd: outRoot, env: process.env });
+
+    console.log('Rebuild Realm');
+    rebuild({
+      buildPath: outRoot,
+      electronVersion: buildPackage.dependencies.electron.substr(1),
+      onlyModules: ['realm']
+    })
+      .then(() => {
+        console.info('Rebuild Successful');
+        packageApp((err, appPaths) => {
+          if (err) {
+            console.error(err);
+            process.exit(1);
+          } else {
+            console.log(`Built to ${appPaths}`);
+          }
+        });
+      })
+      .catch(e => {
+        console.error(`Building modules didn't work!`);
+        console.error(e);
+        process.exit(1);
+      });
   }
 }
 
