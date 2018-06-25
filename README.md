@@ -3,7 +3,7 @@
 
 Throne is Realm browser made with electron
 
-[Download](https://github.com/sn0wle0pard/throne/releases)
+[Download](https://github.com/hahnlee/throne/releases)
 
 If you find first-party realm studio then, follow these links!
 * [Realm Browser OSX](https://github.com/realm/realm-browser-osx/) for macOS
@@ -39,7 +39,7 @@ By Artem Kovyazin Purchased from [the noun project](https://thenounproject.com/l
 
 # [License](./LICENSE)
 ```
-Copyright 2017 이한(Han Lee, sn0wle0pard)
+Copyright 2017-2018 Han Lee
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
