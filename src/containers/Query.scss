@@ -1,0 +1,13 @@
+.query {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .drag {
+    height: 5px;
+    background-color: #62A2E4;
+    cursor: row-resize;
+    transform: translate(0px, 0px)!important;
+  }
+}

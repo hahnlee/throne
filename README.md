@@ -1,5 +1,5 @@
 # Throne
-![logo](./app/static/logos/256x256.png)
+![logo](./static/logos/256x256.png)
 
 Throne is Realm browser made with electron
 
@@ -9,18 +9,16 @@ If you find first-party realm studio then, follow these links!
 * [Realm Browser OSX](https://github.com/realm/realm-browser-osx/) for macOS
 * [Realm Studio](https://realm.io/kr/products/realm-studio/) for macOS, Windows, Linux
 
-# Feature
-## Filtering
-![screen2](./resources/screen2.png)
-![screen3](./resources/screen3.png)
+# Query
+Throne support **JavaScript** [Query](https://realm.io/docs/javascript/latest/api/tutorial-query-language.html)
+![screen1](./resources/query-screen-1.png)
 
-## Structure
-![screen4](./resources/screen4.png)
+Throne also support [lodash](https://lodash.com/) module
+![screen2](./resources/query-screen-2.png)
 
-## Query
-> NOTE: Throne support only few select query and every sql operator must uppercase
+JavaScript works on the [vm](https://nodejs.org/api/vm.html) module of Node.js.
+So, you can not use `require` function. (In other words, things like file I/O are forbidden)
 
-![screen5](./resources/screen5.png)
 
 # Roadmap
 ## 0.2.0

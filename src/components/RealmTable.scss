@@ -1,0 +1,17 @@
+.realmTable {
+  flex: 1;
+
+  .cell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .number {
+    text-align: right;
+  }
+
+  .data {
+    color: #babecc;
+  }
+}

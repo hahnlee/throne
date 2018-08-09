@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/vim,node,linux,macos,windows,visualstudio
 
 ### Linux ###
@@ -436,3 +435,5 @@ __pycache__/
 out/
 dist/
 realm-object-server/
+.awcache/
+.venv/

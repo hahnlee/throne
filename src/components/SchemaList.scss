@@ -1,0 +1,15 @@
+.schemaList {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-right: 1px solid #e5e6ea;
+  color: #1C233F;
+
+  .listItem {
+    padding: .5rem 1rem;
+    &Selected {
+      color: #6d5ff9;
+      background: rgba(109, 95, 249, 0.08);
+    }
+  }
+}

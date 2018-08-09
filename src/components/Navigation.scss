@@ -1,0 +1,30 @@
+.navigation {
+  width: 70px;
+  background-color: #6e60f9;
+  color: #ffffff;
+
+  hr {
+    border-color: #9486ff;
+    margin: .5rem;
+  }
+
+  button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+
+    &.selected {
+      background-color: #9486ff;
+    }
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "strict": true,
+    "baseUrl": "src",
+    "paths": {
+      "assets": ["assets/*"],
+      "components": ["components/*"],
+      "containers": ["containers/*"],
+      "utils": ["utils/*"]
+    }
+  }
+}

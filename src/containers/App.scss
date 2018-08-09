@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .toolTip {
+    position: absolute;
+    left: 4rem;
+    width: 120px;
+    padding: .5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 6px;
+    height: 50px;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent black transparent transparent;
+    }
+  }
+}
